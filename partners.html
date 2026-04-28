@@ -71,10 +71,12 @@
 
     /* DOMAINS */
     .domains-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;margin-top:48px;}
-    .domain-card{padding:40px 36px;border:1px solid rgba(154,127,88,0.15);transition:border-color 0.2s;}
-    .domain-card:hover{border-color:var(--bronze);}
-    .domain-num{font-size:0.7rem;letter-spacing:0.15em;color:var(--bronze);margin-bottom:14px;}
-    .domain-title{font-family:'Lora',serif;font-size:1.2rem;font-weight:400;color:var(--charcoal);margin-bottom:12px;}
+    .domain-card{padding:36px 36px 32px;border:1px solid rgba(154,127,88,0.15);transition:border-color 0.25s,background 0.25s;position:relative;}
+    .domain-card:hover{border-color:var(--bronze);background:rgba(154,127,88,0.025);}
+    .domain-card-icon{width:40px;height:40px;margin-bottom:22px;opacity:0.65;transition:opacity 0.25s;}
+    .domain-card:hover .domain-card-icon{opacity:1;}
+    .domain-num{font-size:0.7rem;letter-spacing:0.15em;color:var(--bronze);margin-bottom:10px;}
+    .domain-title{font-family:'Lora',serif;font-size:1.15rem;font-weight:400;color:var(--charcoal);margin-bottom:10px;line-height:1.35;}
     .domain-body{font-size:0.87rem;line-height:1.8;color:var(--muted);}
 
     /* POSITION PAPERS */
@@ -153,7 +155,7 @@
   <div style="display:flex;align-items:center;gap:28px;">
     <ul class="nav-links">
       <li><a href="#domains" data-en="What We Do" data-es="Qué Hacemos">What We Do</a></li>
-      <li><a href="#papers" data-en="Thinking" data-es="Pensamiento">Thinking</a></li>
+      <li><a href="#papers" data-en="Perspectives" data-es="Perspectivas">Perspectives</a></li>
       <li><a href="#founder" data-en="Founder" data-es="Fundador">Founder</a></li>
       <li><a href="#contact" data-en="Contact" data-es="Contacto">Contact</a></li>
     </ul>
@@ -172,7 +174,7 @@
     <h1 class="hero-title">
       <span data-en="The gap between<br>strategy and <em>execution</em><br>is where we work." data-es="La brecha entre<br>estrategia y <em>ejecución</em><br>es donde trabajamos.">The gap between<br>strategy and <em>execution</em><br>is where we work.</span>
     </h1>
-    <p class="hero-body" data-en="Terrae Partners is a business transformation consulting practice for companies at strategic inflection points. We integrate commercial sustainability, customer excellence, and digital transformation into a unified growth strategy — executed with discipline, not just designed on paper." data-es="Terrae Partners es una práctica consultora de transformación empresarial para empresas en puntos de inflexión estratégicos. Integramos sostenibilidad comercial, excelencia al cliente y transformación digital en una estrategia de crecimiento unificada, ejecutada con disciplina, no solo diseñada en papel.">
+    <p class="hero-body" data-en="Terrae Partners is a business transformation consulting practice for companies at strategic inflection points. We integrate commercial excellence, sustainability, digital transformation, and customer centricity into a unified growth strategy — executed with discipline, not just designed on paper." data-es="Terrae Partners es una práctica consultora de transformación empresarial para empresas en puntos de inflexión estratégicos. Integramos excelencia comercial, sostenibilidad, transformación digital y customer centricity en una estrategia de crecimiento unificada, ejecutada con disciplina, no solo diseñada en papel.">
       Terrae Partners is a business transformation consulting practice for companies at strategic inflection points. We integrate commercial sustainability, customer excellence, and digital transformation into a unified growth strategy, executed with discipline, not just designed on paper.
     </p>
     <div class="cta-row">
@@ -214,34 +216,81 @@
 <section class="section" id="domains">
   <div class="divider"></div>
   <p class="section-label fade-up" data-en="Domains of Impact" data-es="Dominios de Impacto">Domains of Impact</p>
-  <h2 class="section-title fade-up" data-en="Six transformation levers,<br>each tied to measurable outcomes." data-es="Seis palancas de transformación,<br>cada una vinculada a resultados medibles.">Six transformation levers,<br>each tied to measurable outcomes.</h2>
+  <h2 class="section-title fade-up" data-en="Six transformation levers,<br>four grounded in published thinking." data-es="Seis palancas de transformación,<br>cuatro respaldadas con pensamiento publicado.">Six transformation levers,<br>four grounded in published thinking.</h2>
   <div class="domains-grid fade-up">
     <div class="domain-card">
+      <svg class="domain-card-icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <polyline points="4,34 14,22 22,28 32,12 40,16" stroke="#9A7F58" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="32" cy="22" r="8" stroke="#9A7F58" stroke-width="1.5"/>
+  <line x1="38" y1="28" x2="42" y2="32" stroke="#9A7F58" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
       <p class="domain-num">01</p>
       <h3 class="domain-title"><a href="#papers" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(154,127,88,0.4);padding-bottom:1px;transition:border-color 0.2s;" data-en="Commercial Excellence and Go-to-Market Reinvention" data-es="Excelencia Comercial y Reinvención del Go-to-Market">Commercial Excellence and Go-to-Market Reinvention</a></h3>
       <p class="domain-body" data-en="Margin expansion and revenue growth. We transform pricing strategy, customer segmentation, salesforce effectiveness, and channel architecture into disciplined execution." data-es="Expansión de margen y crecimiento de ingresos. Transformamos estrategia de precios, segmentación, efectividad de la fuerza de ventas y arquitectura de canales en ejecución disciplinada.">Margin expansion and revenue growth. We transform pricing strategy, customer segmentation, salesforce effectiveness, and channel architecture into disciplined execution.</p>
     </div>
     <div class="domain-card">
+      <svg class="domain-card-icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 8 C14 8 8 14 8 22 C8 30 14 36 22 36" stroke="#9A7F58" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M22 36 C30 36 36 30 36 22 C36 14 30 8 22 8" stroke="#9A7F58" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="3 2"/>
+  <path d="M22 4 L22 10 M22 4 L19 7 M22 4 L25 7" stroke="#9A7F58" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M40 22 L34 22 M40 22 L37 19 M40 22 L37 25" stroke="#9A7F58" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
       <p class="domain-num">02</p>
       <h3 class="domain-title"><a href="#papers" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(154,127,88,0.4);padding-bottom:1px;transition:border-color 0.2s;" data-en="Sustainable Portfolio and Circular Value" data-es="Portafolio Sostenible y Valor Circular">Sustainable Portfolio and Circular Value</a></h3>
       <p class="domain-body" data-en="ESG ratings, cost savings, and market differentiation. We integrate ESG principles, circular economy thinking, and sustainable product design, converting sustainability from a compliance obligation into a source of competitive differentiation." data-es="Ratings ESG, ahorro de costos y diferenciación de mercado. Integramos principios ESG, economía circular y diseño de productos sostenibles, convirtiendo la sostenibilidad de una obligación en una fuente de diferenciación competitiva.">ESG ratings, cost savings, and market differentiation. We integrate ESG principles, circular economy thinking, and sustainable product design, converting sustainability from a compliance obligation into a source of competitive differentiation.</p>
     </div>
     <div class="domain-card">
+      <svg class="domain-card-icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="6" y="10" width="32" height="20" rx="2" stroke="#9A7F58" stroke-width="1.5"/>
+  <circle cx="14" cy="20" r="2.5" stroke="#9A7F58" stroke-width="1.5"/>
+  <circle cx="22" cy="15" r="2.5" stroke="#9A7F58" stroke-width="1.5"/>
+  <circle cx="30" cy="20" r="2.5" stroke="#9A7F58" stroke-width="1.5"/>
+  <circle cx="22" cy="25" r="2.5" stroke="#9A7F58" stroke-width="1.5"/>
+  <line x1="16.5" y1="18" x2="19.5" y2="16.8" stroke="#9A7F58" stroke-width="1.2"/>
+  <line x1="24.5" y1="16.8" x2="27.5" y2="18" stroke="#9A7F58" stroke-width="1.2"/>
+  <line x1="27.5" y1="22" x2="24.5" y2="23.5" stroke="#9A7F58" stroke-width="1.2"/>
+  <line x1="19.5" y1="23.5" x2="16.5" y2="22" stroke="#9A7F58" stroke-width="1.2"/>
+  <line x1="18" y1="34" x2="26" y2="34" stroke="#9A7F58" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="22" y1="30" x2="22" y2="34" stroke="#9A7F58" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
       <p class="domain-num">03</p>
       <h3 class="domain-title"><a href="#papers" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(154,127,88,0.4);padding-bottom:1px;transition:border-color 0.2s;" data-en="Digital Transformation and Applied AI" data-es="Transformación Digital e IA Aplicada">Digital Transformation and Applied AI</a></h3>
       <p class="domain-body" data-en="Productivity gains and innovation speed. We guide adoption of AI, automation, and platform thinking aligned with human impact, with clear productivity and speed-to-market metrics." data-es="Ganancias de productividad y velocidad de innovación. Guiamos la adopción de IA, automatización y pensamiento de plataforma alineado con el impacto humano y métricas claras.">Productivity gains and innovation speed. We guide adoption of AI, automation, and platform thinking aligned with human impact, with clear productivity and speed-to-market metrics.</p>
     </div>
     <div class="domain-card">
+      <svg class="domain-card-icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="22" cy="16" r="5" stroke="#9A7F58" stroke-width="1.5"/>
+  <path d="M10 38 C10 31 15 27 22 27 C29 27 34 31 34 38" stroke="#9A7F58" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M6 20 C6 14.5 10.5 10 16 10" stroke="#9A7F58" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="2 2"/>
+  <path d="M38 20 C38 14.5 33.5 10 28 10" stroke="#9A7F58" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="2 2"/>
+  <path d="M2 24 C2 17.4 7.4 12 14 12" stroke="#9A7F58" stroke-width="1" stroke-linecap="round" stroke-dasharray="1.5 2.5" opacity="0.5"/>
+  <path d="M42 24 C42 17.4 36.6 12 30 12" stroke="#9A7F58" stroke-width="1" stroke-linecap="round" stroke-dasharray="1.5 2.5" opacity="0.5"/>
+</svg>
       <p class="domain-num">04</p>
-      <h3 class="domain-title" data-en="Customer Experience Transformation" data-es="Transformación de Experiencia del Cliente">Customer Experience Transformation</h3>
-      <p class="domain-body" data-en="NPS uplift, retention, and revenue per customer. We redesign the end-to-end customer journey from segmentation and touchpoint architecture to service model and digital channels." data-es="Mejora de NPS, retención e ingresos por cliente. Rediseñamos el customer journey de extremo a extremo, desde la segmentación y arquitectura de touchpoints hasta el modelo de servicio y canales digitales.">NPS uplift, retention, and revenue per customer. We redesign the end-to-end customer journey from segmentation and touchpoint architecture to service model and digital channels.</p>
+      <h3 class="domain-title"><a href="#papers" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(154,127,88,0.4);padding-bottom:1px;transition:border-color 0.2s;" data-en="Customer Centricity as a Way of Doing Business" data-es="Customer Centricity como Forma de Hacer Negocios">Customer Centricity as a Way of Doing Business</a></h3>
+      <p class="domain-body" data-en="Retention, cost to serve, and customer lifetime value. We embed customer outcomes into process design, channel strategy, data intelligence, and the leadership rituals that make the customer real in every decision cycle." data-es="Retención, costo de servicio y valor de vida del cliente. Integramos los resultados del cliente en el diseño de procesos, estrategia de canales, inteligencia de datos y los rituales de liderazgo que hacen al cliente real en cada ciclo de decisión.">Retention, cost to serve, and customer lifetime value. We embed customer outcomes into process design, channel strategy, data intelligence, and the leadership rituals that make the customer real in every decision cycle.</p>
     </div>
     <div class="domain-card">
+      <svg class="domain-card-icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 6 C15 6 10 11 10 17 C10 21 12 24.5 16 26.5 L16 32 L28 32 L28 26.5 C32 24.5 34 21 34 17 C34 11 29 6 22 6Z" stroke="#9A7F58" stroke-width="1.5" stroke-linejoin="round"/>
+  <line x1="17" y1="36" x2="27" y2="36" stroke="#9A7F58" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="19" y1="39" x2="25" y2="39" stroke="#9A7F58" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="22" y1="10" x2="22" y2="14" stroke="#9A7F58" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="16" y1="12" x2="18" y2="14.5" stroke="#9A7F58" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="28" y1="12" x2="26" y2="14.5" stroke="#9A7F58" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
       <p class="domain-num">05</p>
       <h3 class="domain-title" data-en="Innovation" data-es="Innovación">Innovation</h3>
       <p class="domain-body" data-en="Speed-to-market and new revenue streams. We design the organizational conditions and process architecture for sustained innovation: from opportunity identification and portfolio management to rapid prototyping and commercial launch, connecting creative ambition with disciplined execution." data-es="Velocidad de lanzamiento y nuevas fuentes de ingresos. Diseñamos las condiciones organizacionales y la arquitectura de procesos para la innovación sostenida: desde la identificación de oportunidades y gestión de portafolio hasta el prototipado rápido y el lanzamiento comercial, conectando la ambición creativa con la ejecución disciplinada.">Speed-to-market and new revenue streams. We design the organizational conditions and process architecture for sustained innovation: from opportunity identification and portfolio management to rapid prototyping and commercial launch, connecting creative ambition with disciplined execution.</p>
     </div>
     <div class="domain-card">
+      <svg class="domain-card-icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="6" y="28" width="6" height="10" rx="1" stroke="#9A7F58" stroke-width="1.5"/>
+  <rect x="15" y="20" width="6" height="18" rx="1" stroke="#9A7F58" stroke-width="1.5"/>
+  <rect x="24" y="13" width="6" height="25" rx="1" stroke="#9A7F58" stroke-width="1.5"/>
+  <rect x="33" y="6" width="6" height="32" rx="1" stroke="#9A7F58" stroke-width="1.5"/>
+  <polyline points="9,24 18,16 27,9 36,5" stroke="#9A7F58" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2 2"/>
+</svg>
       <p class="domain-num">06</p>
       <h3 class="domain-title" data-en="Data Strategy and Decision Intelligence" data-es="Estrategia de Datos e Inteligencia de Decisión">Data Strategy and Decision Intelligence</h3>
       <p class="domain-body" data-en="Decision speed and forecast accuracy. We build data-driven organizations from the foundation: architecture, governance, analytics, dashboards, and literacy programs." data-es="Velocidad de decisión y precisión de pronóstico. Construimos organizaciones basadas en datos desde la base: arquitectura, gobernanza, analítica, dashboards y programas de alfabetización.">Decision speed and forecast accuracy. We build data-driven organizations from the foundation: architecture, governance, analytics, dashboards, and literacy programs.</p>
@@ -254,11 +303,12 @@
   <div class="papers-inner">
     <div class="divider"></div>
     <p class="section-label fade-up" data-en="Thinking" data-es="Pensamiento">Thinking</p>
-    <h2 class="section-title fade-up" data-en="Position Papers" data-es="Position Papers">Position Papers</h2>
+    <h2 class="section-title fade-up" data-en="Perspectives" data-es="Perspectivas">Perspectives</h2>
+    <p style="font-size:0.85rem;line-height:1.8;color:var(--muted);max-width:560px;margin-top:8px;" data-en="Four perspectives on transformation — more in progress." data-es="Cuatro perspectivas sobre transformación — más en progreso.">Four perspectives on transformation — more in progress.</p>
 
     <!-- PAPER 3: COMMERCIAL CRAFT -->
     <div class="paper-block fade-up">
-      <p class="paper-tag" data-en="Chapter 01 · Commercial Excellence &amp; Go-to-Market" data-es="Capítulo 01 · Excelencia Comercial y Go-to-Market">Chapter 01 · Commercial Excellence &amp; Go-to-Market</p>
+      <p class="paper-tag" data-en="Chapter 01 · Commercial Excellence" data-es="Capítulo 01 · Excelencia Comercial">Chapter 01 · Commercial Excellence</p>
       <h3 class="paper-title" data-en="Commercial Craft as Competitive Advantage" data-es="El Oficio Comercial como Ventaja Competitiva">Commercial Craft as Competitive Advantage</h3>
       <p class="paper-intro" data-en="The gap between commercial ambition and commercial execution is rarely a gap in conviction. It tends to be a gap in diagnostic precision and in the systems logic applied to close it. The question is not whether a commercial process, a team, and commercial technology are in place. They always are. The question is whether they are being managed as a connected system, whether the right subprocesses are being prioritized, and whether the improvement effort is anchored to a clear and honest definition of where the commercial opportunity actually lives." data-es="La brecha entre la ambición comercial y la ejecución comercial rara vez es una brecha de convicción. Tiende a ser una brecha de precisión diagnóstica y de la lógica de sistemas aplicada para cerrarla. La pregunta no es si existe un proceso comercial, un equipo y tecnología comercial. Siempre existen. La pregunta es si se gestionan como un sistema conectado, si se priorizan los subprocesos correctos y si el esfuerzo de mejora está anclado a una definición clara y honesta de dónde vive realmente la oportunidad comercial.">The gap between commercial ambition and commercial execution is rarely a gap in conviction. It tends to be a gap in diagnostic precision and in the systems logic applied to close it. The question is not whether a commercial process, a team, and commercial technology are in place. They always are. The question is whether they are being managed as a connected system, whether the right subprocesses are being prioritized, and whether the improvement effort is anchored to a clear and honest definition of where the commercial opportunity actually lives.</p>
       <div class="paper-points">
@@ -327,6 +377,32 @@
         <div class="paper-point">
           <p class="paper-point-title" data-en="Strategy Meets Execution" data-es="Estrategia y Ejecución">Strategy Meets Execution</p>
           <p class="paper-point-body" data-en="We do not separate strategy from execution. Our practice is built at the intersection of rigorous strategic thinking and direct operational experience, having led transformations across industrial, commercial, and digital dimensions." data-es="No separamos estrategia de ejecución. Nuestra práctica se construye en la intersección del pensamiento estratégico riguroso y la experiencia operativa directa, habiendo liderado transformaciones en dimensiones industriales, comerciales y digitales.">We do not separate strategy from execution. Our practice is built at the intersection of rigorous strategic thinking and direct operational experience, having led transformations across industrial, commercial, and digital dimensions.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- PAPER 4: CUSTOMER CENTRICITY -->
+    <div class="paper-block fade-up">
+      <p class="paper-tag" data-en="Chapter 04 · Customer Centricity" data-es="Capítulo 04 · Customer Centricity">Chapter 04 · Customer Centricity</p>
+      <h3 class="paper-title" data-en="Customer Centricity as a Way of Doing Business" data-es="Customer Centricity como Forma de Hacer Negocios">Customer Centricity as a Way of Doing Business</h3>
+      <p class="paper-intro" data-en="Customer centricity rarely fails as an aspiration. It fails as an implementation. The distance between an organization that says it is customer-centric and one that is built to be customer-centric is a design gap, not a values gap — visible in processes that optimize for internal efficiency instead of customer outcomes, in data captured but never activated, and in leaders who understand their customers through reports rather than through presence." data-es="La customer centricity rara vez falla como aspiración. Falla como implementación. La distancia entre una organización que dice ser centrada en el cliente y una diseñada para serlo es una brecha de diseño, no de valores, visible en procesos que optimizan la eficiencia interna en lugar de los resultados del cliente, en datos capturados pero nunca activados, y en líderes que entienden a sus clientes a través de reportes en lugar de presencia.">Customer centricity rarely fails as an aspiration. It fails as an implementation. The distance between an organization that says it is customer-centric and one that is built to be customer-centric is a design gap, not a values gap — visible in processes that optimize for internal efficiency instead of customer outcomes, in data captured but never activated, and in leaders who understand their customers through reports rather than through presence.</p>
+      <div class="paper-points">
+        <div class="paper-point">
+          <p class="paper-point-title" data-en="The Expectation Precision Problem" data-es="El Problema de Precisión de Expectativas">The Expectation Precision Problem</p>
+          <p class="paper-point-body" data-en="The strategic error is not failing to meet every expectation. It is not knowing with precision which ones drive renewal, referral, and loyalty in this specific relationship and segment. That is entirely within the company's control — and the organizations that do it consistently turn customer understanding into a structural advantage that generic benchmarks cannot replicate." data-es="El error estratégico no es no cumplir todas las expectativas. Es no saber con precisión cuáles impulsan la renovación, la referencia y la lealtad en esta relación y segmento específicos. Eso está completamente bajo el control de la empresa, y las organizaciones que lo hacen convierten el entendimiento del cliente en una ventaja estructural que los benchmarks genéricos no pueden replicar.">The strategic error is not failing to meet every expectation. It is not knowing with precision which ones drive renewal, referral, and loyalty in this specific relationship and segment. That is entirely within the company's control — and the organizations that do it consistently turn customer understanding into a structural advantage.</p>
+        </div>
+        <div class="paper-point">
+          <p class="paper-point-title" data-en="Channel Strategy and Cost to Serve" data-es="Estrategia de Canal y Costo de Servicio">Channel Strategy and Cost to Serve</p>
+          <p class="paper-point-body" data-en="Adding service channels without a logic for which channel serves which segment, at what cost, and where it generates real value for the customer, creates overhead without loyalty. A mature customer centricity program should drive satisfaction upward and cost to serve downward simultaneously. That combination is the clearest proof the system is actually working." data-es="Agregar canales de servicio sin una lógica de cuál canal sirve a qué segmento, a qué costo y dónde genera valor real para el cliente, crea overhead sin lealtad. Un programa maduro de customer centricity debe elevar la satisfacción y reducir el costo de servicio simultáneamente.">Adding service channels without a logic for which channel serves which segment, at what cost, and where it generates real value for the customer, creates overhead without loyalty. A mature customer centricity program should drive satisfaction upward and cost to serve downward simultaneously.</p>
+        </div>
+        <div class="paper-point">
+          <p class="paper-point-title" data-en="Customer Data as Strategic Asset" data-es="Datos del Cliente como Activo Estratégico">Customer Data as Strategic Asset</p>
+          <p class="paper-point-body" data-en="Customer interactions generate a continuous stream of information at every touchpoint. Most of it is captured incidentally, stored passively, and utilized partially. The organizations that convert that stream into strategic intelligence — knowing which signals predict churn, which experiences drive loyalty — build a compounding advantage that becomes increasingly difficult to replicate from the outside." data-es="Las interacciones con clientes generan un flujo continuo de información en cada touchpoint. La mayoría se captura incidentalmente, se almacena pasivamente y se utiliza parcialmente. Las organizaciones que convierten ese flujo en inteligencia estratégica construyen una ventaja compuesta difícil de replicar.">Customer interactions generate a continuous stream of information at every touchpoint. Most of it is captured incidentally, stored passively, and utilized partially. The organizations that convert that stream into strategic intelligence build a compounding advantage that becomes increasingly difficult to replicate.</p>
+        </div>
+        <div class="paper-point">
+          <p class="paper-point-title" data-en="The Customer in Every Leadership Cycle" data-es="El Cliente en Cada Ciclo de Liderazgo">The Customer in Every Leadership Cycle</p>
+          <p class="paper-point-body" data-en="The most important information about a customer relationship does not travel reliably through dashboards. It lives at the site where the product is used, in the conversation where the complaint was never filed. Rituals and ceremonies that make the customer visible in every leadership meeting — alongside financial outcomes — are the structural design choice that separates aspiration from embedded operating logic." data-es="La información más importante sobre una relación con el cliente no viaja de manera confiable a través de dashboards. Vive en el lugar donde se usa el producto, en la conversación donde la queja nunca se presentó. Los rituales que hacen visible al cliente en cada reunión de liderazgo separan la aspiración de la lógica operativa integrada.">The most important information about a customer relationship does not travel reliably through dashboards. Rituals and ceremonies that make the customer visible in every leadership meeting — alongside financial outcomes — are the structural design choice that separates aspiration from embedded operating logic.</p>
         </div>
       </div>
     </div>
