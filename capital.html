@@ -67,7 +67,7 @@
     /* SECTORS */
     .sectors{padding:100px 48px;background:var(--charcoal);}
     .sectors-inner{max-width:1100px;margin:0 auto;}
-    .sectors-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;margin-top:48px;}
+    .sectors-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:48px;}
     .sector-card{padding:44px 40px;background:rgba(20,18,16,0.6);border-top:2px solid transparent;transition:border-color 0.25s;}
     .sector-card:hover{border-color:var(--bronze-light);}
     .sector-icon{font-family:'Lora',serif;font-size:2rem;color:var(--bronze-light);margin-bottom:20px;line-height:1;}
@@ -132,7 +132,7 @@
       .nav-links{display:none;}
       .hero,.section,.criteria{padding:80px 24px 60px;}
       .thesis,.sectors,.founder,.contact{padding:80px 24px;}
-      .forces-grid,.sectors-grid,.criteria-grid{grid-template-columns:1fr;}
+      .forces-grid,.criteria-grid{grid-template-columns:1fr;}.sectors-grid{grid-template-columns:repeat(2,1fr);}
       .founder-inner{grid-template-columns:1fr;gap:36px;}
       .founder-img{aspect-ratio:4/3;}
       footer{flex-direction:column;gap:20px;text-align:center;padding:28px 24px;}
@@ -148,7 +148,7 @@
   <a href="/" class="nav-logo">Terrae<span>.</span><small>Capital</small></a>
   <div style="display:flex;align-items:center;gap:28px;">
     <ul class="nav-links">
-      <li><a href="#sectors" data-en="Sectors" data-es="Sectores">Sectors</a></li>
+      <li><a href="#sectors" data-en="Domains" data-es="Dominios">Domains</a></li>
       <li><a href="#criteria" data-en="What We Look For" data-es="Qué Buscamos">What We Look For</a></li>
       <li><a href="#founder" data-en="Founder" data-es="Fundador">Founder</a></li>
       <li><a href="#contact" data-en="Contact" data-es="Contacto">Contact</a></li>
@@ -167,7 +167,7 @@
   <div class="hero-content">
     <p class="eyebrow" data-en="Pre-Seed Angel Investment · Climate Tech · Construction Tech" data-es="Inversión Ángel Pre-Seed · Climate Tech · Construction Tech">Pre-Seed Angel Investment · Climate Tech · Construction Tech</p>
     <h1 class="hero-title">
-      <span data-en="Backing founders<br>who are rebuilding<br>the <em>built world.</em>" data-es="Apostando por fundadores<br>que están reconstruyendo<br>el <em>entorno construido.</em>">Backing founders<br>who are rebuilding<br>the <em>built world.</em></span>
+      <span data-en="Backing founders<br>enabling the<br><em>great transformations.</em>" data-es="Apostando por fundadores<br>que habilitan las<br><em>grandes transformaciones.</em>">Backing founders<br>enabling the<br><em>great transformations.</em></span>
     </h1>
     <p class="hero-body" data-en="Terrae Capital is an angel investment vehicle focused on pre-seed startups developing foundational innovations in Climate Tech and Construction Tech. We bring more than capital — we bring operator experience from two decades inside the industry." data-es="Terrae Capital es un vehículo de inversión ángel enfocado en startups pre-seed que desarrollan innovaciones fundacionales en Climate Tech y Construction Tech. Aportamos más que capital: traemos experiencia operativa de dos décadas dentro de la industria.">
       Terrae Capital is an angel investment vehicle focused on pre-seed startups developing foundational innovations in Climate Tech and Construction Tech. We bring more than capital — we bring operator experience from two decades inside the industry.
@@ -183,7 +183,7 @@
 <section class="thesis">
   <div class="thesis-inner">
     <p class="section-label fade-up" data-en="Investment Thesis" data-es="Tesis de Inversión">Investment Thesis</p>
-    <h2 class="section-title fade-up" data-en="The built environment is the next<br>frontier of deep innovation." data-es="El entorno construido es la próxima<br>frontera de la innovación profunda.">The built environment is the next<br>frontier of deep innovation.</h2>
+    <h2 class="section-title fade-up" data-en="The built environment is the next<br>frontier of deep innovation." data-es="El entorno construido es la próxima<br>frontera de la innovación profunda.">The adjacent enabler is the next<br>frontier of transformational investment.</h2>
     <p class="thesis-body fade-up" data-en="The built environment is one of the largest contributors to carbon emissions and one of the least digitized sectors in the global economy. That gap is where the most important entrepreneurial opportunities of the next decade will emerge. We back founders who are reimagining how the built environment is created, operated, and sustained." data-es="El entorno construido es uno de los mayores contribuyentes a las emisiones de carbono y uno de los sectores menos digitalizados de la economía global. Esa brecha es donde surgirán las oportunidades emprendedoras más importantes de la próxima década. Apostamos por fundadores que reimaginan cómo el entorno construido se crea, opera y sostiene.">
       The built environment is one of the largest contributors to carbon emissions and one of the least digitized sectors in the global economy. That gap is where the most important entrepreneurial opportunities of the next decade will emerge. We back founders who are reimagining how the built environment is created, operated, and sustained.
     </p>
@@ -203,6 +203,11 @@
         <h3 class="force-title" data-en="Operator Edge" data-es="Ventaja del Operador">Operator Edge</h3>
         <p class="force-body" data-en="Our edge comes from operator experience. We have led businesses in construction materials, digital transformation, and sustainability across 50+ countries. We understand the industry from the inside — its decision cycles, its constraints, and where technology can genuinely unlock value." data-es="Nuestra ventaja proviene de la experiencia operativa. Hemos liderado negocios en materiales de construcción, transformación digital y sostenibilidad en más de 50 países. Entendemos la industria desde adentro: sus ciclos de decisión, sus restricciones y dónde la tecnología puede genuinamente desbloquear valor.">Our edge comes from operator experience. We have led businesses in construction materials, digital transformation, and sustainability across 50+ countries. We understand the industry from the inside — its decision cycles, its constraints, and where technology can genuinely unlock value.</p>
       </div>
+      <div class="force-card">
+        <p class="force-num">04</p>
+        <h3 class="force-title" data-en="Critical Supply Chain Gap" data-es="Brecha en Cadena de Suministro Crítica">Critical Supply Chain Gap</h3>
+          <p class="force-body" data-en="The electrification of the global economy depends on critical minerals — graphite, rare earths, nickel, lithium — overwhelmingly processed in geopolitically exposed supply chains. Diversification is both a strategic imperative and a structural investment opportunity." data-es="La electrificación de la economía global depende de minerales críticos — grafito, tierras raras, níquel, litio — procesados principalmente en cadenas de suministro geopolíticamente expuestas. La diversificación es tanto un imperativo estratégico como una oportunidad de inversión estructural.">The electrification of the global economy depends on critical minerals — graphite, rare earths, nickel, lithium — overwhelmingly processed in geopolitically exposed supply chains. Diversification is both a strategic imperative and a structural investment opportunity.</p>
+        </div>
     </div>
   </div>
 </section>
@@ -211,34 +216,70 @@
 <section class="sectors" id="sectors">
   <div class="sectors-inner">
     <div class="divider"></div>
-    <p class="section-label fade-up" data-en="Focus Sectors" data-es="Sectores de Enfoque">Focus Sectors</p>
-    <h2 class="section-title fade-up" data-en="Where we invest." data-es="Dónde invertimos.">Where we invest.</h2>
+    <p class="section-label fade-up" data-en="Six Investment Domains" data-es="Seis Dominios de Inversión">Six Investment Domains</p>
+    <h2 class="section-title fade-up" data-en="Six adjacent enabler domains." data-es="Seis dominios habilitadores adyacentes.">Six adjacent enabler domains.</h2>
     <div class="sectors-grid fade-up">
       <div class="sector-card">
         <div class="sector-icon">◈</div>
         <h3 class="sector-title" data-en="Climate Tech" data-es="Climate Tech">Climate Tech</h3>
-        <p class="sector-body" data-en="Startups developing low-carbon materials, green cement alternatives, carbon capture and utilization, energy efficiency in construction, and circular economy solutions for the built environment." data-es="Startups que desarrollan materiales bajos en carbono, alternativas al cemento verde, captura y utilización de carbono, eficiencia energética en construcción y soluciones de economía circular para el entorno construido.">Startups developing low-carbon materials, green cement alternatives, carbon capture and utilization, energy efficiency in construction, and circular economy solutions for the built environment.</p>
+        <p class="sector-body" data-en="Technologies directly reducing carbon emissions in materials, buildings, and industrial processes. Low-carbon cement, carbon capture, circular economy, bio-based materials." data-es="Tecnologías que reducen directamente las emisiones de carbono en materiales, edificios y procesos industriales. Cemento bajo en carbono, captura de carbono, economía circular, materiales biobasados.">Technologies directly reducing carbon emissions in materials, buildings, and industrial processes. Low-carbon cement, carbon capture, circular economy, bio-based materials.</p>
         <div class="sector-tags">
           <span class="sector-tag">Low-Carbon Materials</span>
           <span class="sector-tag">Carbon Capture</span>
           <span class="sector-tag">Circular Economy</span>
-          <span class="sector-tag">Green Building</span>
         </div>
       </div>
       <div class="sector-card">
         <div class="sector-icon">◇</div>
         <h3 class="sector-title" data-en="Construction Tech" data-es="Construction Tech">Construction Tech</h3>
-        <p class="sector-body" data-en="Startups reimagining how construction projects are designed, built, and operated — through AI, automation, digital platforms, supply chain digitalization, and data-driven project management." data-es="Startups que reimaginan cómo se diseñan, construyen y operan los proyectos de construcción, a través de IA, automatización, plataformas digitales, digitalización de cadena de suministro y gestión de proyectos basada en datos.">Startups reimagining how construction projects are designed, built, and operated — through AI, automation, digital platforms, supply chain digitalization, and data-driven project management.</p>
+        <p class="sector-body" data-en="Digitisation and automation of the construction value chain — material passports, AI generative design, B2B platforms, supply chain digitisation, and prefabrication technology." data-es="Digitalización y automatización de la cadena de valor de la construcción — pasaportes de materiales, diseño generativo con IA, plataformas B2B, digitalización de cadena de suministro y prefabricación.">Digitisation and automation of the construction value chain — material passports, AI generative design, B2B platforms, supply chain digitisation, and prefabrication technology.</p>
         <div class="sector-tags">
-          <span class="sector-tag">Industrial AI</span>
-          <span class="sector-tag">Supply Chain</span>
-          <span class="sector-tag">Digital Platforms</span>
-          <span class="sector-tag">Automation</span>
+          <span class="sector-tag">Material Passports</span>
+          <span class="sector-tag">AI Design</span>
+          <span class="sector-tag">B2B Platforms</span>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+      <div class="sector-card">
+        <div class="sector-icon">◉</div>
+        <h3 class="sector-title" data-en="Physical AI" data-es="Physical AI">Physical AI</h3>
+        <p class="sector-body" data-en="AI foundation models that operate in physical environments — robotics, autonomous systems, computer vision for site inspection. Harder and less crowded than software AI." data-es="Modelos fundacionales de IA que operan en entornos físicos — robótica, sistemas autónomos, visión artificial para inspección. Más difícil y menos saturado que la IA de software.">AI foundation models that operate in physical environments — robotics, autonomous systems, computer vision for site inspection. Harder and less crowded than software AI.</p>
+        <div class="sector-tags">
+          <span class="sector-tag">Robotics</span>
+          <span class="sector-tag">Autonomous Systems</span>
+          <span class="sector-tag">Computer Vision</span>
+        </div>
+      </div>
+      <div class="sector-card">
+        <div class="sector-icon">◎</div>
+        <h3 class="sector-title" data-en="Digital &amp; Data" data-es="Digital &amp; Data">Digital &amp; Data</h3>
+        <p class="sector-body" data-en="Digital transformation and strategic data monetisation across construction, industrial, and sustainability sectors. Carbon MRV, ESG reporting, supply chain transparency, data center efficiency." data-es="Transformación digital y monetización estratégica de datos en construcción, industria y sostenibilidad. MRV de carbono, reportes ESG, transparencia en cadena de suministro, eficiencia en centros de datos.">Digital transformation and strategic data monetisation across construction, industrial, and sustainability sectors. Carbon MRV, ESG reporting, supply chain transparency, data center efficiency.</p>
+        <div class="sector-tags">
+          <span class="sector-tag">Carbon MRV</span>
+          <span class="sector-tag">ESG Reporting</span>
+          <span class="sector-tag">Data Monetisation</span>
+        </div>
+      </div>
+      <div class="sector-card">
+        <div class="sector-icon">◬</div>
+        <h3 class="sector-title" data-en="Energy &amp; Storage" data-es="Energy &amp; Storage">Energy &amp; Storage</h3>
+        <p class="sector-body" data-en="Next-generation energy generation and storage to power the transformation. Enhanced geothermal, SMRs, nuclear fusion, agrovoltaics, iron-air batteries. Primarily IPO Watch — strategic positioning." data-es="Generación y almacenamiento de energía de próxima generación. Geotérmica mejorada, SMRs, fusión nuclear, agrovoltaica, baterías hierro-aire. Principalmente IPO Watch — posicionamiento estratégico.">Next-generation energy generation and storage to power the transformation. Enhanced geothermal, SMRs, nuclear fusion, agrovoltaics, iron-air batteries. Primarily IPO Watch — strategic positioning.</p>
+        <div class="sector-tags">
+          <span class="sector-tag">Geothermal</span>
+          <span class="sector-tag">SMRs</span>
+          <span class="sector-tag">Long-Duration Storage</span>
+        </div>
+      </div>
+      <div class="sector-card">
+        <div class="sector-icon">◐</div>
+        <h3 class="sector-title" data-en="Critical Materials" data-es="Critical Materials">Critical Materials</h3>
+        <p class="sector-body" data-en="Supply chain security for the minerals required by the energy transition — graphite, rare earths, nickel, lithium. A structurally distinct thesis from energy generation." data-es="Seguridad de cadena de suministro para los minerales que requiere la transición energética — grafito, tierras raras, níquel, litio. Una tesis estructuralmente distinta de la generación de energía.">Supply chain security for the minerals required by the energy transition — graphite, rare earths, nickel, lithium. A structurally distinct thesis from energy generation.</p>
+        <div class="sector-tags">
+          <span class="sector-tag">Graphite</span>
+          <span class="sector-tag">Rare Earths</span>
+          <span class="sector-tag">Battery Recycling</span>
+        </div>
+      </div>
+    </div></section>
 
 <!-- WHAT WE LOOK FOR -->
 <section class="criteria" id="criteria">
@@ -281,7 +322,7 @@
       <p class="founder-role" data-en="Founder & Managing Partner · Terrae Capital" data-es="Fundador y Managing Partner · Terrae Capital">Founder &amp; Managing Partner · Terrae Capital</p>
       <div class="founder-rule"></div>
       <p data-en="Manuel Toro brings over 21 years of executive experience at a global leader in construction materials, where he led digital transformation, sustainability strategy, and commercial excellence across 50+ countries and 2,500+ people." data-es="Manuel Toro aporta más de 21 años de experiencia ejecutiva en un líder global de materiales de construcción, donde lideró transformación digital, estrategia de sostenibilidad y excelencia comercial en más de 50 países y 2,500 personas.">Manuel Toro brings over 21 years of executive experience at a global leader in construction materials, where he led digital transformation, sustainability strategy, and commercial excellence across 50+ countries and 2,500+ people.</p>
-      <p data-en="He led a sustainable product and solutions portfolio to $7.6B in revenue, with a Net Promoter Score of 74 against an industry average of 40, and a 15% reduction in Cost to Serve. He brings firsthand knowledge of where technology can genuinely unlock value in construction and industrial markets." data-es="Lideró un portafolio de productos y soluciones sostenibles hasta $7.6B en ingresos, con un NPS de 74 frente a un promedio de industria de 40 y una reducción del 15% en Cost to Serve. Aporta conocimiento de primera mano sobre dónde la tecnología puede genuinamente desbloquear valor en mercados de construcción e industria.">He led a sustainable product and solutions portfolio to $7.6B in revenue, with a Net Promoter Score of 74 against an industry average of 40, and a 15% reduction in Cost to Serve. He brings firsthand knowledge of where technology can genuinely unlock value in construction and industrial markets.</p>
+      <p data-en="He led a sustainable product and solutions portfolio to $7.6B in revenue, with a Net Promoter Score of 74 against an industry average of 40, and a 15% reduction in Cost to Serve. He brings firsthand knowledge of where technology can genuinely unlock value in construction and industrial markets." data-es="Lideró un portafolio de productos y soluciones sostenibles hasta $7.6B en ingresos, con un NPS de 74 frente a un promedio de industria de 40 y una reducción del 15% en Cost to Serve. Aporta conocimiento de primera mano sobre dónde la tecnología puede genuinamente desbloquear valor en mercados de construcción e industria.">He led a sustainable product and solutions portfolio to $7.6B in revenue, with a Net Promoter Score of 74 against an industry average of 40, and a 15% reduction in Cost to Serve. He is an active member of Andes Angels and invests through Socialatom LLC and Tribu Tech Latam.</p>
       <p data-en="His academic formation includes graduate programs in management, innovation, and technology at MIT, sustainability strategy, and board governance at leading institutions in Europe and the Americas. He holds executive credentials from MIT, Stanford, INSEAD, IE Madrid, and LSE, among others." data-es="Su formación académica incluye programas de posgrado en gestión, innovación y tecnología en MIT, estrategia de sostenibilidad y gobierno corporativo en instituciones líderes de Europa y las Américas. Cuenta con credenciales ejecutivas de MIT, Stanford, INSEAD, IE Madrid y LSE, entre otras.">His academic formation includes graduate programs in management, innovation, and technology at MIT, sustainability strategy, and board governance at leading institutions in Europe and the Americas. He holds executive credentials from MIT, Stanford, INSEAD, IE Madrid, and LSE, among others.</p>
       <div class="stats-row">
         <div><div class="stat-num">21+</div><div class="stat-label" data-en="Years of experience" data-es="Años de experiencia">Years of experience</div></div>
@@ -298,8 +339,8 @@
   <div class="contact-inner">
     <div class="divider" style="margin:0 auto 20px;"></div>
     <p class="section-label" data-en="Get in Touch" data-es="Contáctanos">Get in Touch</p>
-    <h2 class="section-title fade-up" data-en="Building something<br>in Climate or Construction Tech?" data-es="¿Construyendo algo en<br>Climate o Construction Tech?">Building something<br>in Climate or Construction Tech?</h2>
-    <p class="contact-sub fade-up" data-en="We co-invest alongside angel networks and industry ecosystems. If you are a founder at pre-seed stage or a fellow investor, we would like to hear from you." data-es="Co-invertimos junto a redes de ángeles y ecosistemas industriales. Si eres un fundador en etapa pre-seed o un co-inversionista, queremos escucharte.">We co-invest alongside angel networks and industry ecosystems. If you are a founder at pre-seed stage or a fellow investor, we would like to hear from you.</p>
+    <h2 class="section-title fade-up" data-en="Building something<br>in Climate or Construction Tech?" data-es="¿Construyendo algo en<br>Climate o Construction Tech?">Building something that<br>enables a more sustainable world?</h2>
+    <p class="contact-sub fade-up" data-en="We co-invest alongside angel networks and industry ecosystems. If you are a founder at pre-seed stage or a fellow investor, we would like to hear from you." data-es="Co-invertimos junto a redes de ángeles y ecosistemas industriales. Si eres un fundador en etapa pre-seed o un co-inversionista, queremos escucharte.">We co-invest alongside Andes Angels, Socialatom LLC, and Tribu Tech Latam. If you are a founder at pre-seed or seed stage in one of our six domains — or a fellow investor — we would like to hear from you.</p>
     <form class="contact-form fade-up" id="contact-form" action="https://formspree.io/f/xvzwwpkr" method="POST">
       <div class="form-row">
         <div class="form-group">
